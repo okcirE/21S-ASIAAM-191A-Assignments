@@ -1,0 +1,8 @@
+#Lab 1 Questions
+What changes did we make to the original data?
+We first added area in square kilometers and population density to the attribute table. Thean, a gradient color distribution were added to symbolize population density on the map. 
+And lastly, we added an advanced filter that highlights counties that have asian populations greater than 100,000.
+
+How can the choices we made in changing the data be problematic?
+Changes made to the data can be problematic because it can be bias towards the coder's perspective, and has a potential to 
+leave out asian populations less than 100,000 from being marked significant on the map. As a result, the data would only favor asian populations that live in a denser area.
