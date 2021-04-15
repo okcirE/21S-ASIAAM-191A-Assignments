@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"Place":"Birthplace","Color":"Purple"},"geometry":{"type":"Point","coordinates":[106.78625106811522,-6.118707747190845]}},{"type":"Feature","properties":{"Place":"Home","Color":"Pink"},"geometry":{"type":"Point","coordinates":[-117.66460418701172,34.07882486401267]}}]}
