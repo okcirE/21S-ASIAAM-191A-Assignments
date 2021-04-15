@@ -1,5 +1,5 @@
 html{
-    background-color: rgb(193, 133, 228);
+    background-color: rgb(220, 168, 250);
 }
 html, body {
     padding: 5px;
@@ -7,8 +7,8 @@ html, body {
 
  body {
      display: grid;
-     grid-template-rows: .1fr .30fr .60fr .05fr;
-     grid-template-columns: 1fr;
+     grid-template-rows: 0fr .30fr .15fr .05fr;
+     grid-template-columns: 10fr;
      grid-template-areas: "header" "main" "map"  "footer";
      justify-content: center;
  }
