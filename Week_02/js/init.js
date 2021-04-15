@@ -9,7 +9,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-//JavaScript let variable declaration to create a marker
+// JavaScript let variable declaration to create a marker
 let marker = L.marker([34.0709, -118.444]).addTo(map)
 		.bindPopup('UCLA! This is where I currently am studying at.')
 		.openPopup();
@@ -19,7 +19,7 @@ let marker1 = L.marker([34.0788,-117.6646]).addTo(map)
 let marker2 = L.marker([-6.1187,106.7863]).addTo(map)
 		.bindPopup('Birthplace!')
 		.openPopup();
-		
+
 
 fetch("js/map.geojson")
 		.then(response => {
@@ -30,9 +30,9 @@ fetch("js/map.geojson")
 							// the leaflet method for adding a geojson
 			L.geoJSON(data, {
 				style: function (feature) {
-					return {color: 'red'};
+					return {color: feature.properties.color};
 					}
 			}).bindPopup(function (layer) {
-					return layer.feature.properties.name;
+					return layer.feature.properties.Place;
 			}).addTo(map);
 		});
