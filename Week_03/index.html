@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Leaflet Map</title>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="#">
+       
+        <style>
+
+        #map{height:80vh}
+
+        html{background-image: url('indonesianflag.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;}
+
+        .bold_text {font-weight: bold;}
+        h1 {text-align: center; background-color: rgba(138, 0, 0, 0.8);}
+        p1 {text-align: center; background-color: rgba(248, 248, 248, 0.5);}
+    
+
+        
+
+        </style>
+
+        <!-- Leaflet's css-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+        <!-- Leaflet's JavaScript-->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    </head>
+    
+    <body>
+        <h1>Top 5 Indonesian Restaurants in Southern California.</h1>
+        <p1 class="bold_text">
+            I was born and raised in Indonesia and I love authentic Indonesian food. To the point where 
+            I live to eat Indo food. My favorite dish have to be Nasi Padang (Rice with veggies, rendang, fried chicken, Padang sauce and more).
+            Using this map, I want to share my top 5 Indonesian restaurants that I believe are almost identical to the flavors back home.
+            I hope that you can try and fall in love with Indonesian food just like I have!
+
+        </p1>
+        <p class="bold_text">By Ericko A. Halim</p>
+        <div id="map"></div>
+        
+    </body>
+    
+    <script src="js/init.js"></script>
+
+    <div id="footer"></div>
+
+    <p class="bold_text" >Click on each Restaurant for their Yelp page:</p
+        >
+            <ul>
+                <li class="bold_text"><a href="https://www.yelp.com/biz/merrys-house-of-chicken-west-covina?osq=merry%27s+house">Merry's House of Chicken</a></li>
+                <img src="merry.jpg" /> <p2 class="bold_text">Ayam Goreng Kremes (Fried Chicken with Crunchy Bits)</p2>
+                <li class="bold_text"><a href="https://www.yelp.com/biz/bakmi-parahyangan-west-covina">Bakmi Parahyangan</a></li>
+                <img src="para.jpg" /> <p2 class="bold_text">Mie Ayam Jamur Cincang (Shredded Chicken and Mushroom Noodle)</p2>
+                <li class="bold_text"><a href="https://www.yelp.com/biz/medan-kitchen-rosemead-2?osq=medan+kitchen">Medan Kitchen</a></li>
+                <img src="medan.jpg" /> <p2 class="bold_text">Nasi Kuning Komplit (Turmeric Rice Complete)</p2>
+                <li class="bold_text"><a href="https://www.yelp.com/biz/java-bistro-rancho-cucamonga-3">Java Bistro</a></li>
+                <img src="java.jpg" /> <p2 class="bold_text">Nasi Bungkus Padang (Padang's Wrapped Rice)</p2>
+                <li class="bold_text"><a href="https://www.yelp.com/biz/borneo-kalimantan-cuisine-alhambra-2?osq=borneo+kalimantan">Borneo Kalimantan Cuisine</a></li>
+                <img src="borneo.jpg" /> <p2 class="bold_text">Mie Karet Hokkien (Hokkien Style Rubber Noodles)</p2>
+              </ul>
+</html>
