@@ -1,0 +1,45 @@
+body{
+    display:grid;
+    grid-template-rows: .2fr .6fr .2fr;
+    grid-template-columns: 1fr 1fr 1fr; /* this creates an even two column layout*/
+    grid-template-areas: ".header header" "mappanel contentspanel sidepanel" ". footer footer" /* this creates one row with map panel on the left and sidepanel on the right */
+}
+
+#contents{
+   grid-area: contentspanel;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+#survey {
+    grid-area: sidepanel;
+    overflow: hidden;
+    /* 16:9 aspect ratio */
+    padding-top: 0%;
+    position: relative;
+}
+
+#survey iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+#map{
+    height:90vh;
+    grid-area: mappanel;
+} 
+
+header{
+    grid-area: header;
+    text-align: start;
+    font-style: italic; color: rgb(75, 75, 243); font-size:27px;
+}
+
+footer{
+    grid-area: footer;
+    text-align: justify;
+}
