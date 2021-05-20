@@ -43,7 +43,7 @@ opacity: 1}
 } 
 
 header{
-    grid-area: .header;
+    grid-area: header;
     text-align: center;
     text-shadow: 1px 1px 1px darkblue,
              2px 2px 1px black;
