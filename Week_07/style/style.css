@@ -1,0 +1,65 @@
+body{
+    display:grid;
+    grid-template-rows: .3fr .2fr .1fr;
+    grid-template-columns: 1fr 1fr 1fr; /* this creates an even two column layout*/
+    grid-template-areas: ". header header" "mappanel contentspanel sidepanel" ". footer footer" /* this creates one row with map panel on the left and sidepanel on the right */
+}
+
+#contents{
+   grid-area: contentspanel;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+html{background-image: url('food.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+opacity: 1}
+
+
+#survey {
+    grid-area: sidepanel;
+    overflow: hidden;
+    /* 16:9 aspect ratio */
+    padding-top: 0%;
+    position: relative;
+}
+
+#survey iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+#map{
+    height:90vh;
+    grid-area: mappanel;
+} 
+
+header{
+    grid-area: .header;
+    text-align: center;
+    text-shadow: 1px 1px 1px darkblue,
+             2px 2px 1px black;
+    font-style: Comicsans; color: rgb(75, 75, 243); font-size:67px;
+}
+
+p1{
+    grid-area: header;
+    text-align: center;
+    text-shadow: 4px 4px 5px red;
+    font-style: italic; color: rgb(7, 7, 24); font-size:50px;
+}
+
+
+footer{
+    grid-area: footer;
+    font-size:35px;
+    text-align: justify;
+}
